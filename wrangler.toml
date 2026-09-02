@@ -1,0 +1,6 @@
+name = "vce-eoy-exam-writing-tutor"
+compatibility_date = "2026-09-02"
+compatibility_flags = ["nodejs_compat"]
+
+[assets]
+directory = "./build/client"
