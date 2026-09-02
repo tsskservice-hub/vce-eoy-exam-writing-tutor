@@ -1,0 +1,22 @@
+```toml
+name = "vce-japanese-ai-writing-tutor-remix"
+compatibility_date = "2026-08-30"
+compatibility_flags = ["nodejs_compat"]
+
+[vars]
+# 必要に応じて Supabase などの環境変数をここに定義します
+```
+
+### `.gitignore`
+ビルドキャッシュや node_modules を除外します。
+
+```text
+node_modules
+.env
+.epub
+.pnpm-debug.log
+.yarn-integrity
+build
+public/build
+.cache
+```

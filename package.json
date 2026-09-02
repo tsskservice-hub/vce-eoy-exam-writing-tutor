@@ -1,0 +1,32 @@
+{
+  "name": "vce-ai-tutor-remix",
+  "private": true,
+  "sideEffects": false,
+  "type": "module",
+  "scripts": {
+    "build": "remix build",
+    "dev": "remix dev --manual",
+    "start": "wrangler pages dev --compatibility-date=2026-08-30 ./public",
+    "typecheck": "tsc",
+    "deploy": "npm run build && wrangler pages deploy ./public"
+  },
+  "dependencies": {
+    "@remix-run/cloudflare": "^2.12.0",
+    "@remix-run/css-bundle": "^2.12.0",
+    "@remix-run/react": "^2.17.5",
+    "@supabase/supabase-js": "^2.112.4",
+    "isbot": "^4.1.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20240806.0",
+    "@remix-run/dev": "^2.12.0",
+    "@types/react": "^18.3.31",
+    "@types/react-dom": "^18.3.7",
+    "typescript": "^5.9.3",
+    "vite": "^5.1.0",
+    "vite-tsconfig-paths": "^4.3.1",
+    "wrangler": "^3.60.0"
+  }
+}
